@@ -5,7 +5,7 @@
   <script type="text/javascript" src="script.js"></script>
 </head>
 <title>
-  TEST
+  MJAU
 </title>
 <body">
   <header class="row">
@@ -15,60 +15,45 @@
     </div>
   </header>
 
-  <div id="intro">
-    <div class="container">
-        <!-- INTERT IMAGE LATER<img src=""/> -->
-      <p>
-        You arrive to Catland with a lot of cats and ice cream.
-      </p>
-      <p>
-        "Mjau! Do you want some ice cream?"<br>
-        The Cat King holds one ice cream in each paw.
-      </p>
-      <p>
-        Do you 1 or 2?
-      </p>
-    </div>
+<!--Intro -->
 
-    <div class="container">
-      <input size="50" placeholder="Type '1' or '2'." id="response" />
-      <button  onclick="chooseIceCream()">Submit</button>
-      <p id="error"></p>
-    </div>
+  <div id="startText" class="startTextCSS">
+
+    <p> Welcome to Catland. Press start to go begin.
+    </p>
+
+    <button onclick="start()" class="startButton">Start
+    </button>
+
   </div>
 
-  <div id="cream1" class="hidden">
-    <div class="container text-background">
-        <!--<img src=""/>-->
-      <p>
-        You take the Ice Cream 1, BUT it's filled with dairy!
-      </p>
-      <p>
-        You instantly feel bad and want to cry.
-      </p>
-      <p>
-        Now you're a cat.
-      </p>
-      <p>
-        Would you like to play again? Refresh the browser!
-      </p>
-    </div>
+  <!--Step two-->
+
+  <div>
+          <form id="userAnswer" class="textField hidden" onsubmit="userAnswer(), clear()" method="dialog">
+
+                <input id="userAnswer" class="userAnswerCss" autocomplete="off" type="text" placeholder="Type here..."> 
+                <button onclick="userAnswer()">Enter</button>
+          </form>
   </div>
 
-  <div id="cream2" class="hidden">
-    <div class="container text-background">
-      <!--<img src=""/>-->
+    <!-- Step three-->
+
+    <div id="yes" class="textBox hidden">
       <p>
-       Yummy!
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in
+        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+        and more recently with desktop publishing software like Aldus PageMaker including
+        versions of Lorem Ipsum.
       </p>
-      <p>
-        It was your favorite vegan ice cream.
-      </p>
-      <p>
-        Do you want to continue into the Cat kingdom?
-      </p>
+      <p><strong>Yes or no?</strong></p>
     </div>
-  </div>
+
+
 
   <footer>
   </footer>

@@ -1,21 +1,48 @@
 
-var iceCream1 = "Yummy!";
-var iceCream2 = "Oh no it has dairy!";
 
 
-function chooseIceCream() {
-    var response = document.getElementById("response").value;
 
-if (response === '1') {
-    document.getElementById("cream1").classList.toggle('hidden');
-    document.getElementById("intro").classList.toggle('hidden');
+// Sidans array:
+let listItem = []
+
+
+// Change text in html
+
+function start() {
+    listItem = [];
+    
+    let catLand = document.getElementById("startText").innerHTML = 
+        'Welcome to Catland. Would you like an icecream?';
+
+    document.getElementById("userAnswer").classList.toggle("hidden");
+    
+    listItem.push(catLand);
 }
 
-else if (response === '2') {
-    document.getElementById("cream2").classList.toggle('hidden');
-    document.getElementById("intro").classList.toggle('hidden');
-}
 
-else { document.getElementById("error").innerHTML = "You need to choose an icecream." }
+function clear() {
+    document.getElementById("userAnswer").value = "";
+  }
 
-}
+function userAnswer() {
+    listItem = [];
+
+    let answer = document.getElementById("userAnswer");
+
+    listItem.push(answer);
+  }
+
+
+
+// Game start
+
+
+let answer = document.getElementById("userAnswer").value;
+
+if (answer === "yes") {
+
+    document.getElementById("yes").classList.toggle("hidden");
+
+    listItem.push(answer);
+
+  } 
