@@ -3,46 +3,29 @@
 
 
 // Sidans array:
-let listItem = []
 
+let array = [];
+let answer = "";
 
 // Change text in html
 
 function start() {
-    listItem = [];
+    array = [];
     
     let catLand = document.getElementById("startText").innerHTML = 
         'Welcome to Catland. Would you like an icecream?';
 
-    document.getElementById("userAnswer").classList.toggle("hidden");
+    document.getElementById("buttonSceneYes").classList.toggle("hidden");
+    document.getElementById("buttonSceneNo").classList.toggle("hidden");
     
-    listItem.push(catLand);
+    array.push(catLand);
 }
 
-
-function clear() {
-    document.getElementById("userAnswer").value = "";
-  }
-
-function userAnswer() {
-    listItem = [];
-
-    let answer = document.getElementById("userAnswer");
-
-    listItem.push(answer);
-  }
-
-
-
-// Game start
-
-
-let answer = document.getElementById("userAnswer").value;
-
-if (answer === "yes") {
-
-    document.getElementById("yes").classList.toggle("hidden");
-
-    listItem.push(answer);
-
-  } 
+function scene1() {
+    array = [];
+    
+    let catLand = document.getElementById("stepTwo").innerHTML = 
+        'Hello here is scene 1';
+    
+    array.push(catLand);
+}
