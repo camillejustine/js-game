@@ -1,4 +1,6 @@
+// test skickar funktioner till html
 
+// window.onload = start;
 
 
 
@@ -7,25 +9,54 @@
 let array = [];
 let answer = "";
 
-// Change text in html
+
+// Game starts
 
 function start() {
     array = [];
-    
-    let catLand = document.getElementById("startText").innerHTML = 
-        'Welcome to Catland. Would you like an icecream?';
 
-    document.getElementById("buttonSceneYes").classList.toggle("hidden");
-    document.getElementById("buttonSceneNo").classList.toggle("hidden");
-    
-    array.push(catLand);
+    let catLand = document.getElementById("stepOne").classList.toggle("hidden");
+
+    array.push[catLand];
 }
+
+// First choice
 
 function scene1() {
     array = [];
     
-    let catLand = document.getElementById("stepTwo").innerHTML = 
-        'Hello here is scene 1';
+    let catLand = document.getElementById("stepTwo").classList.toggle("hidden");
+    
+    array.push(catLand);
+}
+
+// Second choice
+
+function scene2() {
+    array = [];
+    
+    let catLand = document.getElementById("stepThree").classList.toggle("hidden");
+    
+    array.push(catLand);
+}
+
+
+// Third choice
+
+function end() {
+    array = [];
+    
+    let catLand = document.getElementById("endScene").classList.toggle("hidden");
+    
+    array.push(catLand);
+}
+
+// Play again after death
+
+function replay() {
+    array = [];
+    
+    let catLand = document.getElementById("introScene").classList.toggle("hidden");
     
     array.push(catLand);
 }

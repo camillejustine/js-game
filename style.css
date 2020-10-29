@@ -1,8 +1,20 @@
 
 
+.introText {
+  position: absolute;
 
+  height: 100%;
+  width: 100%;
 
+  background-color: teal;
+}
 
-.hidden {
-  display: none;
+.sceneContainer {
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: teal;
+
 }

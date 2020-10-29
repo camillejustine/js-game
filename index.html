@@ -2,50 +2,92 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="localstyles.css">
   <script type="text/javascript" src="script.js"></script>
 </head>
 <title>
   MJAU
 </title>
 <body">
-  <header class="row">
-    <div class="container">
-      <h1>Welcome to Catland!</h1>
-      <a href="https://youtu.be/4rrXR6n0RTY?t=208">Listen to our anthem</a>
+  <header class="flex center column">
+    <div class="container flex center column">
+      <h1>Welcome!</h1>
     </div>
   </header>
 
 <!--Intro -->
 
-  <div id="startText" class="startTextCSS">
+  <div id="introScene" class="introText flex center column">
 
-    <p> Welcome to Catland. Press start to go begin.
-    </p>
+    <p>Press start to go begin.</p>
 
     <button onclick="start()" class="startButton">Start
     </button>
 
   </div>
 
-  <!--Scene 1-->
+<!--Scene 1-->
 
-<div id="stepTwo" class="textContentCss">
+<div id="stepOne" class="sceneContainer flex center column hidden">
 
-    <button onclick="scene1()" id="buttonSceneYes" class="startButton hidden">Yes
-    </button>
+  <p>Hello! Yes or no?</p>
 
-    <button onclick="scene1()" id="buttonSceneNo" class="startButton hidden">No
-    </button>
+  <div class="buttonGroup flex center row">
+  <button onclick="scene1()" id="buttonSceneYes" class="buttonCss">Yes
+  </button>
 
+  <button onclick="scene1()" id="buttonSceneNo" class="buttonCss">No
+  </button>
+</div>
+
+</div>
+
+<!--Scene 2-->
+
+<div id="stepTwo" class="sceneContainer flex center column hidden">
+
+  <p>Hello2! Yes or no?</p>
+  
+  <div class="buttonGroup flex center row">
+  <button onclick="scene2()" id="buttonSceneYes" class="buttonCss">Yes
+  </button>
+    
+  <button onclick="scene2()" id="buttonSceneNo" class="buttonCss">No
+  </button>
   </div>
+    
+</div>
 
-    <!--Scene 2-->
+<!--Scene 2-->
+
+<div id="stepThree" class="sceneContainer flex center column hidden">
+
+  <p>Hello3! Yes or no?</p>
+
+  <div class="buttonGroup flex center row">  
+  <button onclick="end()" id="buttonSceneYes" class="buttonCss">Yes
+  </button>
+    
+  <button onclick="end()" id="buttonSceneNo" class="buttonCss">No
+  </button>
+  </div>
+    
+</div>
 
 
+<!--End scene-->
+
+<div id="endScene" class="sceneContainer flex center column hidden">
+
+  <p>You're dead</p>
+
+  <button onclick="replay()" id="buttonSceneReplay" class="buttonCss">Play again
+  </button>
+    
+</div>
 
 
-
-  <footer>
-  </footer>
+<footer>
+</footer>
 </body>
 </html>
