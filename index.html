@@ -8,17 +8,14 @@
 <title>
   MJAU
 </title>
-<body">
-  <header class="flex center column">
-    <div class="container flex center column">
-      <h1>Welcome!</h1>
-    </div>
-  </header>
+<body>
 
 <!--Intro -->
 
-  <div id="introScene" class="introText flex center column">
+  <div id="introScene" class="introScene flex center column">
 
+    <h1>Welcome to Catland!</h1>
+    <br>
     <p>Press start to go begin.</p>
 
     <button onclick="start()" class="startButton">Start
@@ -28,66 +25,90 @@
 
 <!--Scene 1-->
 
-<div id="stepOne" class="sceneContainer flex center column hidden">
+<div id="sceneOne" class="sceneContainer flex center column hidden">
 
-  <p>Hello! Yes or no?</p>
+    <p>Hello!<br>
+      <br>
+      You just entered the World of cats.<br>
+      Here you can run free and pet all the cats you'd like.<br>
+      <strong>The Cat King</strong> invites you into his kingdom<br>
+      <br>
+      <strong>Do you accept the invitation?</strong>
+    </p>
 
   <div class="buttonGroup flex center row">
-  <button onclick="scene1()" id="buttonSceneYes" class="buttonCss">Yes
+  <button onclick="accept()" id="buttonSceneYes" class="buttonCss">YES!!
   </button>
 
-  <button onclick="scene1()" id="buttonSceneNo" class="buttonCss">No
+  <button onclick="end()" id="buttonSceneNo" class="buttonCss">No...
   </button>
+
+  </div>
 </div>
 
-</div>
+<!--Scene 2 yes -->
 
-<!--Scene 2-->
+<div id="sceneTwo" class="sceneContainer flex center column hidden">
 
-<div id="stepTwo" class="sceneContainer flex center column hidden">
-
-  <p>Hello2! Yes or no?</p>
+  <p>WoW!<br>
+  What a kingdom. You see so many cute cats and you want to pet them all!<br>
+  A Scottish Fold appears. He wants to give you an ice cream.<br>
+  <br>
+  <strong>Do you want the ice cream?</strong>
+  </p>
   
   <div class="buttonGroup flex center row">
-  <button onclick="scene2()" id="buttonSceneYes" class="buttonCss">Yes
-  </button>
+   <button onclick="takeIceCream()" id="buttonSceneYes" class="buttonCss">Oh yeah!
+    </button>
     
-  <button onclick="scene2()" id="buttonSceneNo" class="buttonCss">No
-  </button>
+    <button onclick="end()" id="buttonSceneNo" class="buttonCss">No thanks cat.
+    </button>
   </div>
     
 </div>
+
 
 <!--Scene 2-->
 
-<div id="stepThree" class="sceneContainer flex center column hidden">
+<div id="sceneThree" class="sceneContainer flex center column hidden">
 
-  <p>Hello3! Yes or no?</p>
+  <p>Yippie!<br>
+    That was the best vegan ice cream you've eaten.<br>
+    You want to show gratitude to the cat<strong>, but how?</strong>
+  </p>
 
   <div class="buttonGroup flex center row">  
-  <button onclick="end()" id="buttonSceneYes" class="buttonCss">Yes
+  <button onclick="end2()" id="buttonSceneYes" class="buttonCss">Play with cat.
   </button>
     
-  <button onclick="end()" id="buttonSceneNo" class="buttonCss">No
+  <button onclick="end()" id="buttonSceneNo" class="buttonCss">Pet cat.
   </button>
   </div>
     
 </div>
 
 
-<!--End scene-->
+<!--End scenes-->
 
 <div id="endScene" class="sceneContainer flex center column hidden">
 
-  <p>You're dead</p>
+  <p>You're dead
+  </p>
 
   <button onclick="replay()" id="buttonSceneReplay" class="buttonCss">Play again
   </button>
     
 </div>
 
+<div id="endScene2" class="sceneContainer flex center column hidden">
 
-<footer>
-</footer>
+  <p>Now you're a cat.<br>
+ <strong>Congrats!</strong></p>
+
+  <button onclick="replay()" id="buttonSceneReplay" class="buttonCss">Play again
+  </button>
+    
+</div>
+
 </body>
 </html>

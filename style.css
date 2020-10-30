@@ -1,20 +1,28 @@
 
 
-.introText {
-  position: absolute;
+.introScene {
+  position: fixed;
 
   height: 100%;
   width: 100%;
+
+  margin-top: 10rem;
 
   background-color: teal;
 }
 
 .sceneContainer {
-  position: absolute;
+  position: fixed;
 
   height: 100%;
   width: 100%;
 
+  margin-top: 10rem;
+
   background-color: teal;
 
+}
+
+.buttonGroup {
+  justify-content: center;
 }

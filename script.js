@@ -3,60 +3,45 @@
 // window.onload = start;
 
 
-
-// Sidans array:
-
-let array = [];
-let answer = "";
-
-
-// Game starts
+/** Game starts */
 
 function start() {
-    array = [];
 
-    let catLand = document.getElementById("stepOne").classList.toggle("hidden");
-
-    array.push[catLand];
+    document.getElementById("sceneOne").classList.toggle("hidden");
 }
 
-// First choice
+/** Get choices to if accept invitation or not*/
 
-function scene1() {
-    array = [];
-    
-    let catLand = document.getElementById("stepTwo").classList.toggle("hidden");
-    
-    array.push(catLand);
+function accept() {
+
+    document.getElementById("sceneTwo").classList.toggle("hidden");
+
+
 }
 
-// Second choice
+/** Get choice to eat ice cream or not*/
 
-function scene2() {
-    array = [];
-    
-    let catLand = document.getElementById("stepThree").classList.toggle("hidden");
-    
-    array.push(catLand);
+function takeIceCream() {
+
+    document.getElementById("sceneThree").classList.toggle("hidden");
 }
 
 
-// Third choice
+/** Endings */
+
+function end2() {
+
+    document.getElementById("endScene2").classList.toggle("hidden");
+}
 
 function end() {
-    array = [];
-    
-    let catLand = document.getElementById("endScene").classList.toggle("hidden");
-    
-    array.push(catLand);
+
+    document.getElementById("endScene").classList.toggle("hidden");
 }
 
-// Play again after death
+/** Play again */
 
 function replay() {
-    array = [];
-    
-    let catLand = document.getElementById("introScene").classList.toggle("hidden");
-    
-    array.push(catLand);
+
+        location.reload();
 }
